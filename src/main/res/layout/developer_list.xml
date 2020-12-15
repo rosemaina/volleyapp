@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="80dp"
+        >
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingBottom="2dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="false"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#5E5E5E"
+        android:textStyle="bold"
+        android:textColor="#FFFF00"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:padding="8dp"
+        android:text="User Name"
+        />
+
+    <TextView
+        android:id="@+id/githubUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textColor="?android:textColorSecondary"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:drawableStart="@drawable/ic_url_link"
+        android:text="http://url.com"
+        android:drawableLeft="@drawable/ic_url_link" />
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
